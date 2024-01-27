@@ -2,7 +2,7 @@ const url = 'https://api.instagram.com/oauth/access_token';
 const clientId = '1062902878314084';
 const clientSecret = 'd46b8207f34144c4a17694191cc713c0';
 const redirectUri = 'https://CMBCAM.github.io/tamuhack2024/auth';
-const authorizationCode = 'AQCGoOP60ieew_Wb0fULlfpVdystdDti4EYTaU3yQywp0noPqIolkIIqP69z1eHK4xXKszAMfcajM_xRyd-OY6NNZvXySlOk-FZPTnvV0DQERuinWDf2FLKuEYlD46NM9yttLzyfiqbwEQZMTL4yBxt2HvQigBhLtsaNDKA0L4kyvl69_C9sLPyl8GRUNXgAPWrBx45hIjNFargV073AFY2xm0o7hUgpP8WR2qNc3m7l5Q';
+authorizationCode = 'AQCGoOP60ieew_Wb0fULlfpVdystdDti4EYTaU3yQywp0noPqIolkIIqP69z1eHK4xXKszAMfcajM_xRyd-OY6NNZvXySlOk-FZPTnvV0DQERuinWDf2FLKuEYlD46NM9yttLzyfiqbwEQZMTL4yBxt2HvQigBhLtsaNDKA0L4kyvl69_C9sLPyl8GRUNXgAPWrBx45hIjNFargV073AFY2xm0o7hUgpP8WR2qNc3m7l5Q';
 
 function getParameterByName(name, url) {
     if (!url) url = window.location.href;
