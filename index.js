@@ -292,6 +292,9 @@ function updateImage(){
     let PIIList = document.getElementById("PII");
     newPost(PII,PIIList,pageCount,PIIcatagories[pageCount]);
     let captionUpdate = document.getElementById("caption");
+    if (PII[pageCount].caption.length > 130){
+        PII[pageCount].caption = PII[pageCount].caption.substring(0, 130) + "...";
+    }
     caption.textContent = PII[pageCount].caption;
 }
 
