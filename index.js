@@ -3,10 +3,10 @@ let name;
 let temp;
 let nextPage;
 let legitData;
-let positive,culture,negative;
+let positive,culture,negative,birthday;
 //emails / phones
-let yucky = [];
-let interests = [[]]
+let critical = [[],[]];
+let interests = []
 
 function searchData(){
     console.log(name);
@@ -50,11 +50,12 @@ function searchData(){
         //check if a caption exists
         if(legitData[i].caption !==undefined){
             //this will be long
-            let count = 0;
+            //let count = 0;
             for (let j = 0; j < culture.length; j++){ //culture only
-                if (legitData[i].caption.toLowerCase().indexOf(culture[j].toLowerCase()) !== -1){
-                    count++;
+                if (legitData[i].caption.toLowerCase().includes(culture[j].toLowerCase())){
+                    //count++;
                     console.log(culture[j]);
+                    interests = interests.concat(legitData[i]);
                 }
                 //console.log(count + " cultures");
             }
@@ -70,18 +71,25 @@ function searchData(){
             phones = findPhoneNumber(legitData[i].caption);
             //were there any emails
             if(emails.length !==0){
-                yucky = yucky.concat(legitData[i]);
+                critical[0] = critical[0].concat(legitData[i]);
+                critical[1] = critical[1].concat(emails);
             }  
             else if(phones.length !== 0){
-                yucky = yucky.concat(legitData[i]);
+                critical[0] = critical[0].concat(legitData[i]);
+                critical[1] = critical[1].concat(phones);
             }  
         }
     }
 
-    console.log(yucky);
+    console.log(critical);
+    console.log(interests);
 }
 
 function parseWords(){
+
+}
+
+function detectSchool(){
 
 }
 
@@ -126,6 +134,13 @@ async function fetchData() {
         .then(data => {
             culture = data.split('\r\n');
             console.log(culture);
+        })
+        .catch(error => console.error('Error loading the file:', error));
+    fetch('filters/birthday.txt')
+        .then(response => response.text())
+        .then(data => {
+            birthday = data.split('\r\n');
+            console.log(birthday);
         })
         .catch(error => console.error('Error loading the file:', error));
     //id and username

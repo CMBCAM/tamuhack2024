@@ -1199,3 +1199,204 @@ Calypso
 Dance-Pop
 Electropop
 Synthpop
+Horse
+Arabian
+Thoroughbred
+Quarter Horse
+Clydesdale
+Shetland Pony
+Friesian
+Andalusian
+Morgan
+Appaloosa
+Paint Horse
+Tennessee Walking Horse
+Percheron
+Icelandic Horse
+Mustang
+Palomino
+Haflinger
+Belgian
+Welsh Pony
+Paso Fino
+Gypsy Vanner
+Miniature Horse
+Lipizzan
+Akhal-Teke
+Irish Draught
+Shire
+Connemara Pony
+Saddlebred
+Suffolk Punch
+Cleveland Bay
+American Standardbred
+Dutch Warmblood
+Hanoverian
+Holsteiner
+Trakehner
+Peruvian Paso
+Camargue
+Exmoor Pony
+Hackney
+Swiss Warmblood
+Noriker
+Cleveland Bay
+Canadian Horse
+Budyonny
+Marwari
+Caspian Horse
+Kabarda
+Chincoteague Pony
+Florida Cracker Horse
+American Cream Draft
+Nokota Horse
+Irish Sport Horse
+Australian Stock Horse
+Danish Warmblood
+Newfoundland Pony
+Highland Pony
+Karabair
+Noric
+Danish Sport Pony
+Dutch Draft
+Galiceno
+Iomud
+Jutland
+Kathiawari
+Missouri Fox Trotter
+Pura Raza Española (PRE)
+Rocky Mountain Horse
+Russian Don
+Salerno Horse
+Spanish-Norman
+Standardbred
+Tersk
+Vladimir Heavy Draft
+Warlander
+Welara
+Yonaguni
+Zaniskari Pony
+American Bashkir Curly
+Australian Pony
+Bosnian Pony
+Colonial Spanish Horse
+Dutch Harness Horse
+Erlunchun
+French Trotter
+Garrano
+Hokkaido
+Italian Heavy Draft
+Jeju Horse
+Kerry Bog Pony
+Kladruber
+Latvian Horse
+Lusitano
+Malapolski
+Mongolian Horse
+Pindos Pony
+Poitevin
+Racking Horse
+Sanhe
+Sudan Country-Bred
+Tori
+Ventasso Horse
+American Quarter Horse
+Thoroughbred
+Morgan
+American Saddlebred
+Tennessee Walking Horse
+Paint Horse
+Appaloosa
+American Standardbred
+American Miniature Horse
+American Mustang
+American Bashkir Curly
+American Cream Draft
+American Warmblood
+American Albino
+American Walking Pony
+Florida Cracker Horse
+Marsh Tacky
+Narragansett Pacer
+Nokota Horse
+Rocky Mountain Horse
+American Indian Horse
+American Cream Draft
+American Shetland Pony
+Kentucky Mountain Saddle Horse
+Missouri Fox Trotter
+National Show Horse
+North American Single-Footing Horse
+Palomino
+Racking Horse
+Spanish Mustang
+Sugarbush Harlequin Draft
+American Sugarbush Harlequin Draft
+Carolina Marsh Tacky
+Colorado Ranger Horse
+Florida Cracker Horse
+Kentucky Mountain Saddle Horse
+McCurdy Plantation Horse
+Missouri Fox Trotter
+Mountain Pleasure Horse
+Paso Fino
+Pintabian
+Pleasure Saddle Horse of the Americas
+Red River Horse
+Spotted Saddle Horse
+Walkaloosa
+Florida Cracker Horse
+Carolina Marsh Tacky
+Colonial Spanish Horse
+Choctaw Horse
+American Cream Draft
+American Walking Pony
+Banker Horse
+Choctaw Horse
+Marsh Tacky
+Mustang
+Paso Fino
+Pintabian
+Pleasure Saddle Horse of the Americas
+Red River Horse
+Rocky Mountain Horse
+Selle Français American
+Spanish Mustang
+Spotted Saddle Horse
+Sulphur Horse
+Tenneessee Walking Horse
+Tiger Horse
+American Walking Pony
+Colonial Spanish Horse
+Florida Cracker Horse
+Choctaw Horse
+Marsh Tacky
+Mustang
+Paso Fino
+Pintabian
+Pleasure Saddle Horse of the Americas
+Red River Horse
+Rocky Mountain Horse
+Selle Français American
+Spanish Mustang
+Spotted Saddle Horse
+Sulphur Horse
+Tennessee Walking Horse
+Tiger Horse
+Walkaloosa
+West African Barb
+Waler Horse
+Kentucky Mountain Saddle Horse
+Pleasure Saddle Horse of the Americas
+Red River Horse
+Rocky Mountain Horse
+Selle Français American
+Spanish Mustang
+Spotted Saddle Horse
+Sulphur Horse
+Tennessee Walking Horse
+Tiger Horse
+Walkaloosa
+West African Barb
+Waler Horse
+Yakut Horse
