@@ -284,12 +284,16 @@ function newPost(c, element,n, catagory){
     
 }
 function updateImage(){
+    let deleteList = document.getElementById("PII");
+    deleteList.innerHTML = "";
     let imageUpdater = document.getElementById("post-image");
     imageUpdater.src = PII[pageCount].media_url;
     let linkUpdate = document.getElementById("post-link");
     linkUpdate.href = PII[pageCount].permalink;
     let PIIList = document.getElementById("PII");
     newPost(PII,PIIList,pageCount,PIIcatagories[pageCount]);
+    let captionUpdate = document.getElementById("caption");
+    caption
 }
 
 
