@@ -29,6 +29,7 @@ let nextPage;
 let legitData;
 let positive,culture,negative,birthday,school,address;
 let addressCount= phoneCount= emailCount= birthdayCount= schoolCount= PIICount= interestCount =0;
+let pageCount = 0;
 //emails / phones
 //let information = [[],[],[]];
 //let important = [[],[]];
@@ -249,12 +250,12 @@ function findPhoneNumber(text) {
 }
 
 function applyChanges() {
-    let PIIList = document.getElementById("PII");
+    /*let PIIList = document.getElementById("PII");
     for (let i = 0; i < PII.length; i++){
         newPost(PII,PIIList,i, PIIcatagories[i]);
     }
     let minorList = document.getElementById("Minor");
-   /* for (let i = 0; i < minor.length;i++){
+    for (let i = 0; i < minor.length;i++){
         let newList;
         let newListElement;
         newList = document.createElement("ul");
@@ -281,6 +282,17 @@ function newPost(c, element,n, catagory){
     }
     
     
+}
+function updateImage(){
+    let imageUpdater = document.getElementById("post-image");
+    imageUpdater.src = PII[pageCount].media_url;
+}
+function incrementPage(){
+    pageCount++;
+}
+
+function decrementPage(){
+    pageCount--
 }
 
 async function fetchData() {
