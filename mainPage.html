@@ -49,7 +49,8 @@
             <div class = "login-box">
                 <p class = "sign-in-text">Sign In</p>
                 <div class = "social-icon">
-                    <img src = "./imgs/instagram-icon.png"/>
+                    <a target="_blank" href="https://api.instagram.com/oauth/authorize?
+                    client_id=1062902878314084&redirect_uri=https://CMBCAM.github.io/redirect&scope=user_profile,user_media&response_type=code"><img src = "./imgs/instagram-icon.png"/></a>
                     <img src = "./imgs/facebook-icon.png"/>
                     <img src = "./imgs/snapchat-icon.png"/>
                 </div>
@@ -58,7 +59,7 @@
                 <div><img id = "post-image" src = "./imgs/img-placeholder.jpeg"/></div>
                 <div class = "img-btns">
                     <button id = "prev-button" onClick=decrementPage()>Prev</button>
-                    <button id = "post-button" >Link To Post</button>
+                    <a href="" id = "post-link" target="_blank"><button id = "post-button" >Link To Post</button></a>
                     <button id = "next-btn" onClick=incrementPage()>Next</button>
                 </div>
             </div>
