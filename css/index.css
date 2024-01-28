@@ -392,8 +392,8 @@
 #PII{
     position: absolute;
     
-    margin-top: 710px;
-    margin-left: 70px;
+    margin-top: 800px;
+    margin-left: 80px;
     top: 95%;
 }
 
@@ -401,7 +401,7 @@
     display: inline-block;
     min-height: min-content;
 
-    padding-top: 120px;
+    padding-top: 20px;
     padding-left: 30px;
 
     color: white;
