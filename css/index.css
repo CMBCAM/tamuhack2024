@@ -242,7 +242,7 @@
 
     left: 100px;
     top: 950px;
-    background-color: #F6B17A;
+    background-color: #7077A1;
 
     width: 400px;
     height: 500px;
@@ -274,7 +274,7 @@
     display: block;
     text-align: center;
 
-    background-color: #7077A1;
+    background-color: #F6B17A;
 
 
     width: 300px;
@@ -390,6 +390,10 @@
     width: 50px;
     height: 50px;
 }
+#instagram-pic{
+    width: 50px;
+    height: 50px;
+}
 
 #mission-statement{
     padding-top: 80px;
@@ -451,3 +455,4 @@
     color: #7077A1;
     font-weight:300;
 }
+
