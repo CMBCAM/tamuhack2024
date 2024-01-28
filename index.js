@@ -288,16 +288,28 @@ function updateImage(){
     imageUpdater.src = PII[pageCount].media_url;
     let linkUpdate = document.getElementById("post-link");
     linkUpdate.href = PII[pageCount].permalink;
+    //let PIIList = document.getElementById("vulnerabilities-list");
+   // newPost(PII,PIIList,i,PIIcatagories[i]);
 }
 
 
 function incrementPage(){
-    pageCount++;
+    if (pageCount == PII.length){
+        pageCount = 0; 
+    }  
+    else {
+        pageCount++;
+    }
     updateImage();
 }
 
 function decrementPage(){
-    pageCount--;
+    if (pageCount == PII.length){
+        pageCount = PII.length; 
+    }  
+    else {
+        pageCount--;
+    }
     updateImage();
 }
 
