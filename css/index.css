@@ -18,9 +18,19 @@
     }
   }
 
+  body{
+    overflow-x: hidden;
+  }
+
 .logo{
-    width: 200px;
     position: absolute;
+
+    width: 200px;
+    top: -15px;
+    left: 20px;
+
+    transform: rotate(-15deg);
+
 }
 
 .page-top{
@@ -70,6 +80,9 @@
   .navbar{
     display : flex;
     justify-content: space-evenly;
+
+    animation: fadeIn 1s ease-in-out;
+
     background-color: #424769;
     height: 50px;
   }
@@ -88,5 +101,48 @@
   }
 
   .jumbotron {
-    animation: slideIn 1s ease-in-out;
+    text-align: center;
+    animation: slideIn 3s ease-in-out;
+
+    padding-left: 10px;
+    padding-top: 50px;
+  }
+
+  .diag-div-a{
+    position: absolute;
+
+    background-color: rgb(246, 177, 122);
+    margin-top: 80%;
+
+    top: -125px;
+    left: -100px;
+
+    height: 400px;
+    width: 200%;
+
+    transform: skew(20deg);
+    transform: rotate(15deg);
+    z-index: -1;
+    animation: slideIn 3s ease-in-out;
+
+  }
+
+  .diag-div-a-scrolled{
+    position: absolute;
+
+    background-color: rgb(246, 177, 122);
+    margin-top: 80%;
+
+    top: -125px;
+    left: -100px;
+
+    height: 400px;
+    width: 200%;
+
+    transform: skew(20deg);
+    transform: rotate(15deg);
+    
+    z-index: -1;
+    animation: slideIn 3s ease-in-out;
+
   }
