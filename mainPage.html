@@ -22,7 +22,7 @@
         <button> Pricing </button>
     </div>
 
-    <div id = "header-desc-id" class="header-desc" onscroll="diagDivAScroll()"">
+    <div id = "header-desc-id" class="header-desc">
         <h1 class="display-4">Review Your Web History</h1>
         <p class="lead">& Track Sensitive Information</p>
         <hr class="my-4">
@@ -48,14 +48,14 @@
             </p>
             <p class = "big-mission">
                As Does Privacy Risk
-            </p class = "small-mission">
+            </p class = "small-mission" onclick="updateImage()">
             <p> We Check For Leaks In Your Information So You Do Not Need To Worry</p>
         </div>
         <img class = "mid-section-img" src = "./imgs/footprint.png"/>
 
     </div>
 
-    <div class = "footer"> 
+    <div class = "footer" > 
         <div id = "diag-div-a" class="diag-div-a">
             <div class = "box-one">
                 <p class = "vulnerabilities-list">Potential<br>Vulnerabilities</p>
@@ -64,9 +64,9 @@
             <div class = "login-box">
                 <p class = "sign-in-text">Sign In</p>
                 <div class = "social-icon">
-                    <a target="_blank" onclick="updateImage()" href="https://api.instagram.com/oauth/authorize?client_id=1062902878314084&redirect_uri=https://CMBCAM.github.io/redirect&scope=user_profile,user_media&response_type=code"><img src = "./imgs/instagram-icon.png"/></a>
-                    <img src = "./imgs/facebook-icon.png"/>
-                    <img src = "./imgs/snapchat-icon.png"/>
+                    <a target="_blank"  href="https://api.instagram.com/oauth/authorize?client_id=1062902878314084&redirect_uri=https://CMBCAM.github.io/redirect&scope=user_profile,user_media&response_type=code"><img id = "instagram-pic" src = "./imgs/instagram-bw.png"/></a>
+                    <img id = "fb-pic" src = "./imgs/facebook-bw.png"/>
+                    <img src = "./imgs/snapchat-bw.png"/>
                 </div>
             </div>
             <div class = "target-img">
