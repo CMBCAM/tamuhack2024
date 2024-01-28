@@ -334,12 +334,20 @@
 .img-btns{
     display: flex;
     justify-content: space-evenly;
-
+    margin-top: 40px;
 }
+.img-btns > button{
+    border: 2px solid #ec9751;
+    background-color: transparent;
+
+    color: #ec9751;
+    font-weight: bold;
+}
+
 .social-icon{
     margin-top: 40px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .social-icon > img{
