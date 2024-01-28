@@ -2,12 +2,15 @@
     0% {
       transform: translateX(-100%);
       opacity: 0;
+      
     }
     100% {
       transform: translateX(0);
       opacity: 1;
     }
   }
+
+ 
 
   @keyframes fadeIn {
     0% {
@@ -17,6 +20,25 @@
       opacity: 1;
     }
   }
+
+  @keyframes slideDiagonal {
+    0% {
+      transform: translateX(-100%) translateY(-100%) rotate(45deg);
+    }
+    100% {
+      transform: translateX(100%) translateY(100%) rotate(45deg);
+    }
+}
+
+@keyframes grow {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 200%;
+    }
+  }
+
 
   body{
     overflow-x: hidden;
@@ -100,9 +122,9 @@
 
   }
 
-  .jumbotron {
+  .header-desc {
     text-align: center;
-    animation: slideIn 3s ease-in-out;
+    animation: slideIn 2.5s ease-in-out;
 
     padding-left: 10px;
     padding-top: 50px;
@@ -112,37 +134,92 @@
     position: absolute;
 
     background-color: rgb(246, 177, 122);
-    margin-top: 80%;
+    margin-top: 70%;
 
-    top: -125px;
+    top: 200px;
     left: -100px;
 
-    height: 400px;
+    height: 300px;
     width: 200%;
-
-    transform: skew(20deg);
+    visibility: hidden;
+    
+    z-index: 2;
     transform: rotate(15deg);
-    z-index: -1;
-    animation: slideIn 3s ease-in-out;
 
   }
 
   .diag-div-a-scrolled{
-    position: absolute;
+    visibility:visible;
 
-    background-color: rgb(246, 177, 122);
-    margin-top: 80%;
-
-    top: -125px;
-    left: -100px;
-
-    height: 400px;
-    width: 200%;
-
-    transform: skew(20deg);
     transform: rotate(15deg);
-    
-    z-index: -1;
-    animation: slideIn 3s ease-in-out;
-
+    animation: fadeIn 1s ease-in-out;
   }
+
+ 
+  .diag-div-complement{
+    position: absolute;
+    margin-top: 85%;
+    top: 150px;
+
+    background-color: #7077A1;
+
+    height: 225px;
+    width: 100%;
+
+    visibility: hidden;
+    
+  }
+
+  .diag-div-precomplement{
+    position: absolute;
+    margin-top: 90%;
+    top: 200px;
+
+    background-color: #424769;
+
+    height: 100px;
+    width: 100%;
+
+    visibility: hidden;
+    z-index: 1;
+  }
+  .diag-div-comp-reveal{
+    visibility: visible;
+    animation: slideIn 1.5s ease-in-out;
+  }
+
+  .diag-div-pre-comp-reveal{
+    visibility: visible;
+    animation: slideIn 1.5s ease-in-out;
+  }
+
+ 
+.notecards{
+    display: flex;
+
+    border-radius: 5px solid black;
+
+    margin-top: 50px;
+    margin-left: 150px;
+
+    gap: 400px;
+}
+
+.notecards > div{
+    background-color: #2D3250;
+    color: white;
+
+    height: 200px;
+    width: 200px;
+
+    text-align: center;
+    vertical-align: middle;
+    line-height: 200px;
+
+    border-radius: 20px;
+
+    transform: rotate(-15deg);
+
+
+}
+
