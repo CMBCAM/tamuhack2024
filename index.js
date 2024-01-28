@@ -1,4 +1,5 @@
 let jsonData;
+let name;
 
 async function fetchData() {
   try {
@@ -11,8 +12,26 @@ async function fetchData() {
 
     jsonData = await response.json();
     console.log(jsonData);
+    //save name
+    name = jsonData.username;
 
-    // Any further processing or actions with jsonData should be done here
+  } catch (error) {
+    console.error(error);
+  }
+  //media
+  //captions might need to loop
+  try {
+    //captions
+    const response = await fetch('https://graph.instagram.com/me/media?fields=id,caption&access_token=IGQWRQVGlxdHhGeVVWbk8yRllOdV8yWnBkcENFT0F1SzhPSFFIUmVFbzJWNlRlX3ZAsV1BDWHVkeUttU29jNnlUU0lUR01BYWY0OXg0TXdXWWUwY1YtaUFQNTA2OFpIVjNvMVpYbDcySGdvTU1pY2VDdk1uanU1aHMZD');
+    
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+
+    jsonData = await response.json();
+    console.log(jsonData);
+
+    
   } catch (error) {
     console.error(error);
   }
