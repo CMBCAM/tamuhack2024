@@ -288,7 +288,7 @@ function updateImage(){
     imageUpdater.src = PII[pageCount].media_url;
     let linkUpdate = document.getElementById("post-link");
     linkUpdate.href = PII[pageCount].permalink;
-    let PIIList = document.getElementById("vulnerabilities-list");
+    let PIIList = document.getElementById("PII");
     newPost(PII,PIIList,pageCount,PIIcatagories[pageCount]);
 }
 
@@ -359,7 +359,7 @@ async function fetchData() {
         })
         .catch(error => console.error('Error loading the file:', error));
     //id and username
-    let response = await fetch('https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,username,timestamp,permalink&access_token=IGQWRQVGlxdHhGeVVWbk8yRllOdV8yWnBkcENFT0F1SzhPSFFIUmVFbzJWNlRlX3ZAsV1BDWHVkeUttU29jNnlUU0lUR01BYWY0OXg0TXdXWWUwY1YtaUFQNTA2OFpIVjNvMVpYbDcySGdvTU1pY2VDdk1uanU1aHMZD');
+    let response = await fetch('https://graph.instagram.com/7091364407614663?fields=id,username&access_token=IGQWRQVGlxdHhGeVVWbk8yRllOdV8yWnBkcENFT0F1SzhPSFFIUmVFbzJWNlRlX3ZAsV1BDWHVkeUttU29jNnlUU0lUR01BYWY0OXg0TXdXWWUwY1YtaUFQNTA2OFpIVjNvMVpYbDcySGdvTU1pY2VDdk1uanU1aHMZD');
     
     if (!response.ok) {
       throw new Error('Network response was not ok');
@@ -407,7 +407,7 @@ async function fetchData() {
     await searchData(); //up there!
     console.log(addressCount, phoneCount, emailCount, birthdayCount, schoolCount, PIICount, interestCount)
     applyChanges();
-    updateImage();
+    //updateImage();
   } catch (error) {
     console.error(error);
   }
