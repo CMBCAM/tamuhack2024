@@ -12,8 +12,11 @@ let positive,culture,negative,birthday,school,address;
 //let secruityQuestion = [];
 
 //
-let PII = [[],[]];
+let PII = [];
+let PIIcatagories = []
 let minor = [];
+let PIIPosts = [];
+let minorPosts = [];
 
 function searchData(){
     console.log(name);
@@ -91,19 +94,33 @@ function searchData(){
             if(emails.length !==0){
                 //important[0] = important[0].concat(legitData[i]);
                 //important[1] = important[1].concat(emails);
-                PII[0] = PII[0].concat(legitData[i]);
-                PII[1] = PII[1].concat("Email");
+                if (PIIPosts.includes(legitData[i].id) == false){
+                    PII.push(legitData[i]);
+                    PIIcatagories.push(["Email"]);
+                    PIIPosts.push(legitData[i].id);
+                }
+                else{
+                    PIIcatagories[PIIPosts.indexOf(legitData[i].id)].push("Email");
+                }
             }  
             if(phones.length !== 0){
                 //important[0] = important[0].concat(legitData[i]);
                 //important[1] = important[1].concat(phones);
-                PII[0] = PII[0].concat("Phone");
-                PII[1] = PII[1].concat(legitData[i]);
+                if (PIIPosts.includes(legitData[i].id) == false){
+                    PII.push(legitData[i]);
+                    PIIcatagories.push(["Phone"]);
+                    PIIPosts.push(legitData[i].id);
+                }
+                else{
+                    PIIcatagories[PIIPosts.indexOf(legitData[i].id)].push("Phone");
+                }
             }  
         }
     }
 
-    console.log(information);
+    console.log(PII);
+    console.log(PIIcatagories);
+    console.log(minor);
     //console.log(interests);
    // console.log(potential);
 }
@@ -114,8 +131,14 @@ function parseBirthday(i){
             //count++;
             console.log(birthday[j]);
             //potential = potential.concat(legitData[i]);
-            PII[0] = PII[0].concat("Birthday");
-            PII[1] = PII[1].concat(legitData[i]);
+            if (PIIPosts.includes(legitData[i].id) == false){
+                PII.push(legitData[i]);
+                PIIcatagories.push(["Birthday"]);
+                PIIPosts.push(legitData[i].id);
+            }
+            else{
+                PIIcatagories[PIIPosts.indexOf(legitData[i].id)].push("Birthday");
+            }
         }
         //console.log(count + " cultures");
     }
@@ -129,8 +152,14 @@ function detectSchool(i){
             //count++;
             console.log(school[j]);
             //potential = potential.concat(legitData[i]);
-            PII[0] = PII[0].concat("School");
-            PII[1] = PII[1].concat(legitData[i]);
+            if (PIIPosts.includes(legitData[i].id) == false){
+                PII.push(legitData[i]);
+                PIIcatagories.push(["School"]);
+                PIIPosts.push(legitData[i].id);
+            }
+            else{
+                PIIcatagories[PIIPosts.indexOf(legitData[i].id)].push("School");
+            }
         }
     }
 }
@@ -141,8 +170,14 @@ function findAddress(i){
             //count++;
             console.log(address[j]);
             //important[0] = important[0].concat(legitData[i]);
-            PII[0] = PII[0].concat("Address");
-            PII[1] = PII[1].concat(legitData[i]);
+            if (PIIPosts.includes(legitData[i].id) == false){
+                PII.push(legitData[i]);
+                PIIcatagories.push(["Address"]);
+                PIIPosts.push(legitData[i].id);    
+            }
+            else{
+                PIIcatagories[PIIPosts.indexOf(legitData[i].id)].push("Address");
+            }
         }
     }
 }
@@ -164,6 +199,29 @@ function findPhoneNumber(text) {
     matches = text.match(phonePattern);
     
     return matches || [];
+}
+
+function applyChanges() {
+    let PIIList = document.getElementById("PII");
+    for (let i = 0; i < PII.length; i++){
+        newPost(PII,PIIList,i, PIIcatagories[i]);
+    }
+
+}
+
+function newPost(c, element,n, catagory){
+    let newSection = document.createElement("div");
+    let newList;
+    let newListElement;
+    newList = document.createElement("ul");
+    element.appendChild(newList);
+    for (let i = 0; i < catagory.length; i++) {
+        newListElement= document.createElement("li");
+        newListElement.textContent = catagory[i];
+        newList.appendChild(newListElement);
+    }
+    
+    
 }
 
 async function fetchData() {
@@ -258,6 +316,7 @@ async function fetchData() {
         console.log(legitData);
     }
     searchData(); //up there!
+    applyChanges();
   } catch (error) {
     console.error(error);
   }
