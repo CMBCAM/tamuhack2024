@@ -2,3 +2,25 @@
     background-color: #2D3250 !important;
     height: 100px;
 }
+
+.page-title{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+
+    text-align: center;
+    padding-top: 30px;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .jumbotron {
+    animation: fadeIn 1s ease-in-out;
+  }
