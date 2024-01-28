@@ -252,9 +252,10 @@
 }
 
 .vulnerabilities-list{
-    display: inline-block;
-
+    display: flex;
     vertical-align: top;
+
+    height: min-content;
 
     margin-left: auto;
     margin-right: auto;
@@ -355,4 +356,12 @@
 .social-icon > img{
     width: 45px;
     height: 45px;
+}
+
+#PII{
+    position: absolute;
+    
+    margin-top: 710px;
+    margin-left: 70px;
+    top: 95%;
 }
