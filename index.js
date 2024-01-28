@@ -81,9 +81,9 @@ function searchData(){
     let currentWord;
 
     //Test
-    legitData[4].caption += " 808-852-0200 ";
-    legitData[5].caption += "Enjoying my last day of high school at Epic school! #ClassOf2022 #GraduationDay";
-    legitData[3].caption += " #birthday something on Gark Rd ";
+    //legitData[4].caption += "  ";
+    //legitData[5].caption += "Enjoying my last day of high school at Epic school! #ClassOf2022 #GraduationDay";
+    //legitData[3].caption += " #birthday something on Gark Rd ";
 
     for (let i = 0; i < size; i++){
         let emails;
@@ -127,7 +127,9 @@ function searchData(){
                     PIIPosts.push(legitData[i].id);
                 }
                 else{
+                    if ("Email" !== PIIcatagories[PIIPosts.indexOf(legitData[i].id)]){
                     PIIcatagories[PIIPosts.indexOf(legitData[i].id)].push("Email");
+                    }
                 }
                 emailCount++;
                 PIICountl++;
@@ -141,7 +143,9 @@ function searchData(){
                     PIIPosts.push(legitData[i].id);
                 }
                 else{
+                    if ("Phone" !== PIIcatagories[PIIPosts.indexOf(legitData[i].id)]){
                     PIIcatagories[PIIPosts.indexOf(legitData[i].id)].push("Phone");
+                    }
                 }
                 phoneCount++;
                 PIICount++;
@@ -168,7 +172,9 @@ function parseBirthday(i){
                 PIIPosts.push(legitData[i].id);
             }
             else{
-                PIIcatagories[PIIPosts.indexOf(legitData[i].id)].push("Birthday");
+                if ("Birthday" !== PIIcatagories[PIIPosts.indexOf(legitData[i].id)]){
+                    PIIcatagories[PIIPosts.indexOf(legitData[i].id)].push("Birthday");
+                }
             }
             birthdayCount++;
             PIICount++;
@@ -191,7 +197,9 @@ function detectSchool(i){
                 PIIPosts.push(legitData[i].id);
             }
             else{
+                if ("School" !== PIIcatagories[PIIPosts.indexOf(legitData[i].id)]){
                 PIIcatagories[PIIPosts.indexOf(legitData[i].id)].push("School");
+                }
             }
             schoolCount++;
             PIICount++;
@@ -211,7 +219,9 @@ function findAddress(i){
                 PIIPosts.push(legitData[i].id);    
             }
             else{
+                if ("Address" !== PIIcatagories[PIIPosts.indexOf(legitData[i].id)]){
                 PIIcatagories[PIIPosts.indexOf(legitData[i].id)].push("Address");
+                }
             }
             addressCount++;
             PIICount++;
@@ -338,8 +348,8 @@ async function fetchData() {
   //grab all the ids might need to loop
   try {
     //rest of the data
-    let response = await fetch('https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,username,timestamp,permalink&access_token=IGQWRQVGlxdHhGeVVWbk8yRllOdV8yWnBkcENFT0F1SzhPSFFIUmVFbzJWNlRlX3ZAsV1BDWHVkeUttU29jNnlUU0lUR01BYWY0OXg0TXdXWWUwY1YtaUFQNTA2OFpIVjNvMVpYbDcySGdvTU1pY2VDdk1uanU1aHMZD');
-    
+    //let response = await fetch('https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,username,timestamp,permalink&access_token=IGQWRQVGlxdHhGeVVWbk8yRllOdV8yWnBkcENFT0F1SzhPSFFIUmVFbzJWNlRlX3ZAsV1BDWHVkeUttU29jNnlUU0lUR01BYWY0OXg0TXdXWWUwY1YtaUFQNTA2OFpIVjNvMVpYbDcySGdvTU1pY2VDdk1uanU1aHMZD');
+    let response = await fetch('  https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,username,timestamp,permalink&access_token=IGQWROV0NiczVBMUpield5d0JOLVJ4Y21ubHZABaDlDUXpXckFaUDIxU0p6ZADJDRDk1WTlkZAEttZAkszbGtxaGlTT0ZAmT2VIdUxFV0xPODVDckY1ZAy1uSEN1SEFvbEFiV3BlX0hoOFNTMEJDWUhuX05TR3JSdG5DRTQZD');
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }
