@@ -3,6 +3,7 @@ var captionStatus = true;
 function diagDivAScroll(){
     const diagDivA = document.getElementById("diag-div-a");
     diagDivA.classList.add("diag-div-a-scrolled");
+
     diagDivComp();
 }
 
@@ -30,7 +31,7 @@ var headerDesc = document.getElementById("header-desc-id");
 
 console.log(headerDesc)
 window.addEventListener("scroll", () => {
-    if (this.scrollY >= headerDesc.scrollHeight + 1500) {
+    if (this.scrollY >= headerDesc.scrollHeight + 1375) {
       diagDivAScroll();
     }
 })
