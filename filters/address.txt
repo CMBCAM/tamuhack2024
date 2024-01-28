@@ -1,0 +1,22 @@
+Street
+Road
+Avenue
+Boulevard
+Lane
+Highway
+Freeway
+Alley
+ Rd 
+ St 
+ Ave 
+ Blvd 
+ Ln 
+ Ct 
+ Pl 
+ Ter 
+ Hwy 
+ Fwy 
+ Expwy 
+ Pkwy 
+ Tpk 
+ Byw 

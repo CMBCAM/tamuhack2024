@@ -3,10 +3,17 @@ let name;
 let temp;
 let nextPage;
 let legitData;
-let positive,culture,negative,birthday;
+let positive,culture,negative,birthday,school,address;
 //emails / phones
-let critical = [[],[]];
-let interests = []
+//let information = [[],[],[]];
+//let important = [[],[]];
+//let potential = [];
+//let interests = [];
+//let secruityQuestion = [];
+
+//
+let PII = [[],[]];
+let minor = [];
 
 function searchData(){
     console.log(name);
@@ -43,7 +50,12 @@ function searchData(){
     //Loop through elements
     let wordArray;
     let currentWord;
+
+    //Test
     legitData[4].caption += " 808-852-0200 ";
+    legitData[5].caption += "Enjoying my last day of high school at Epic school! #ClassOf2022 #GraduationDay";
+    legitData[3].caption += " #birthday something on Gark Rd ";
+
     for (let i = 0; i < size; i++){
         let emails;
         let phones;
@@ -55,10 +67,16 @@ function searchData(){
                 if (legitData[i].caption.toLowerCase().includes(culture[j].toLowerCase())){
                     //count++;
                     console.log(culture[j]);
-                    interests = interests.concat(legitData[i]);
+                    //interests = interests.concat(legitData[i]);
+                    //information[0] = information[0].concat("interest");
+                    minor = minor.concat(legitData[i]);
+                    
                 }
                 //console.log(count + " cultures");
             }
+            parseBirthday(i);
+            detectSchool(i);
+            findAddress(i);
 
 
             /*wordArray = legitData[i].caption.split(/\s+/);
@@ -71,26 +89,62 @@ function searchData(){
             phones = findPhoneNumber(legitData[i].caption);
             //were there any emails
             if(emails.length !==0){
-                critical[0] = critical[0].concat(legitData[i]);
-                critical[1] = critical[1].concat(emails);
+                //important[0] = important[0].concat(legitData[i]);
+                //important[1] = important[1].concat(emails);
+                PII[0] = PII[0].concat(legitData[i]);
+                PII[1] = PII[1].concat("Email");
             }  
-            else if(phones.length !== 0){
-                critical[0] = critical[0].concat(legitData[i]);
-                critical[1] = critical[1].concat(phones);
+            if(phones.length !== 0){
+                //important[0] = important[0].concat(legitData[i]);
+                //important[1] = important[1].concat(phones);
+                PII[0] = PII[0].concat("Phone");
+                PII[1] = PII[1].concat(legitData[i]);
             }  
         }
     }
 
-    console.log(critical);
-    console.log(interests);
+    console.log(information);
+    //console.log(interests);
+   // console.log(potential);
 }
 
-function parseWords(){
-
+function parseBirthday(i){
+    for (let j = 0; j < birthday.length; j++){ //culture only
+        if (legitData[i].caption.toLowerCase().includes(birthday[j].toLowerCase())){
+            //count++;
+            console.log(birthday[j]);
+            //potential = potential.concat(legitData[i]);
+            PII[0] = PII[0].concat("Birthday");
+            PII[1] = PII[1].concat(legitData[i]);
+        }
+        //console.log(count + " cultures");
+    }
 }
 
-function detectSchool(){
 
+
+function detectSchool(i){
+    for (let j = 0; j < school.length; j++){ //culture only
+        if (legitData[i].caption.toLowerCase().includes(school[j].toLowerCase())){
+            //count++;
+            console.log(school[j]);
+            //potential = potential.concat(legitData[i]);
+            PII[0] = PII[0].concat("School");
+            PII[1] = PII[1].concat(legitData[i]);
+        }
+    }
+}
+
+function findAddress(i){
+    for (let j = 0; j < address.length; j++){ //culture only
+        if (legitData[i].caption.toLowerCase().includes(address[j].toLowerCase())){
+            //count++;
+            console.log(address[j]);
+            //important[0] = important[0].concat(legitData[i]);
+            PII[0] = PII[0].concat("Address");
+            PII[1] = PII[1].concat(legitData[i]);
+        }
+    }
 }
 
 function findEmailAddresses(text) {
@@ -141,6 +195,20 @@ async function fetchData() {
         .then(data => {
             birthday = data.split('\r\n');
             console.log(birthday);
+        })
+        .catch(error => console.error('Error loading the file:', error));
+    fetch('filters/school.txt')
+        .then(response => response.text())
+        .then(data => {
+            school = data.split('\r\n');
+            console.log(school);
+        })
+        .catch(error => console.error('Error loading the file:', error));
+    fetch('filters/address.txt')
+        .then(response => response.text())
+        .then(data => {
+            address = data.split('\r\n');
+            console.log(address);
         })
         .catch(error => console.error('Error loading the file:', error));
     //id and username

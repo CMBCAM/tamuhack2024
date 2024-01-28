@@ -1,0 +1,285 @@
+Apple
+Apricot
+Avocado
+Banana
+Blackberry
+Blueberry
+Boysenberry
+Cantaloupe
+Cherry
+Clementine
+Coconut
+Cranberry
+Date
+Dragon fruit
+Fig
+Grape
+Grapefruit
+Guava
+Honeydew melon
+Kiwi
+Kumquat
+Lemon
+Lime
+Lychee
+Mango
+Mandarin orange
+Nectarine
+Orange
+Papaya
+Passion fruit
+Peach
+Pear
+Persimmon
+Pineapple
+Plum
+Pomegranate
+Raspberry
+Red currant
+Strawberry
+Watermelon
+Artichoke
+Arugula
+Asparagus
+Beet
+Bell pepper
+Bok choy
+Broccoli
+Brussels sprouts
+Cabbage
+Carrot
+Cauliflower
+Celery
+Corn
+Cucumber
+Eggplant
+Garlic
+Green bean
+Kale
+Leek
+Lettuce
+Mushroom
+Okra
+Onion
+Pea
+Potato
+Pumpkin
+Radish
+Spinach
+Squash
+Sweet potato
+Tomato
+Turnip
+Zucchini
+Barley
+Brown rice
+Buckwheat
+Bulgur
+Couscous
+Farro
+Oats
+Quinoa
+White rice
+Wild rice
+Cornmeal
+Wheat flour
+Rye
+Spelt
+Corn tortilla
+Wheat tortilla
+Baguette
+Ciabatta
+Croissant
+Pretzel
+Muffin
+Pancake
+Waffle
+Biscuit
+Scone
+Pita bread
+Naan
+Milk
+Butter
+Cheese
+Yogurt
+Sour cream
+Cream cheese
+Cottage cheese
+Ice cream
+Whipped cream
+Feta cheese
+Blue cheese
+Parmesan cheese
+Mozzarella cheese
+Brie
+Camembert
+Goat cheese
+Chicken
+Turkey
+Duck
+Goose
+Quail
+Beef
+Pork
+Lamb
+Venison
+Bison
+Rabbit
+Salmon
+Tuna
+Cod
+Tilapia
+Shrimp
+Crab
+Lobster
+Clam
+Mussel
+Oyster
+Scallop
+Sardine
+Anchovy
+Egg
+Tofu
+Tempeh
+Seitan
+Lentil
+Chickpea
+Black bean
+Kidney bean
+Pinto bean
+Navy bean
+Soybean
+Pea protein
+Edamame
+Peanut
+Almond
+Walnut
+Cashew
+Pecan
+Pistachio
+Hazelnut
+Bread
+Baguette
+Ciabatta
+Rye bread
+Sourdough
+Croissant
+Pretzel
+Bagel
+English muffin
+Naan
+Tortilla
+Flatbread
+Cracker
+Pita bread
+Matzo
+Focaccia
+Cornbread
+Muffin
+Pancake
+Waffle
+Chocolate
+Vanilla
+Strawberry
+Mint
+Caramel
+Butterscotch
+Fudge
+Truffle
+Toffee
+Gummy bears
+Licorice
+Hard candy
+Lollipop
+Cotton candy
+Marshmallow
+Nougat
+Gum
+Mints
+Fruit leather
+Jelly beans
+Potato chips
+Tortilla chips
+Pretzels
+Popcorn
+Trail mix
+Nuts
+Granola bar
+Rice cakes
+Cheese puffs
+Crackers
+Veggie chips
+Pita chips
+Pretzel sticks
+Jerky
+Seaweed snacks
+Dried fruit
+Wasabi peas
+Edamame
+Coffee
+Espresso
+Latte
+Cappuccino
+Americano
+Mocha
+Cold brew
+Black tea
+Green tea
+White tea
+Oolong tea
+Chai tea
+Herbal tea
+Iced tea
+Water
+Sparkling water
+Lemonade
+Orange juice
+Apple juice
+Grape juice
+Cranberry juice
+Tomato juice
+Soda
+Cola
+Root beer
+Lemon-lime soda
+Ginger ale
+Tonic water
+Club soda
+Energy drink
+Sports drink
+Milkshake
+Smoothie
+Protein shake
+Almond milk
+Soy milk
+Coconut milk
+Oat milk
+Rice milk
+Horchata
+Hot chocolate
+Milk tea
+Wine
+Champagne
+Beer
+Lager
+Ale
+Stout
+IPA
+Sake
+Whiskey
+Vodka
+Rum
+Tequila
+Gin
+Brandy
+Cocktails
+Sushi
+Tempura
+Ramen
+Sashimi
+Miso soup
+Teriyaki
+Bento box
+Udon
+Pad Thai
+Spring
