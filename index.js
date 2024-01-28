@@ -271,14 +271,13 @@ function applyChanges() {
 
 function newPost(c, element,n, catagory){
     //let newSection = document.createElement("div");
-    let newList;
+    //let newList;
     let newListElement;
-    newList = document.createElement("ul");
-    element.append(newList);
+    //element.append(newList);
     for (let i = 0; i < catagory.length; i++) {
-        newListElement= document.createElement("li");
+        newListElement= document.createElement("p");
         newListElement.textContent = catagory[i];
-        newList.appendChild(newListElement);
+        element.append(newListElement);
     }
     
     
