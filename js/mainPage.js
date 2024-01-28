@@ -30,7 +30,7 @@ var headerDesc = document.getElementById("header-desc-id");
 
 console.log(headerDesc)
 window.addEventListener("scroll", () => {
-    if (this.scrollY >= headerDesc.scrollHeight + 500) {
+    if (this.scrollY >= headerDesc.scrollHeight + 1500) {
       diagDivAScroll();
     }
 })
