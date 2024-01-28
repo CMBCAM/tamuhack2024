@@ -21,7 +21,7 @@ var headerDesc = document.getElementById("header-desc-id");
 
 console.log(headerDesc)
 window.addEventListener("scroll", () => {
-    if (this.scrollY >= headerDesc.scrollHeight) {
+    if (this.scrollY >= headerDesc.scrollHeight + 500) {
       diagDivAScroll();
     }
 })
