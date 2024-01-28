@@ -286,13 +286,19 @@ function newPost(c, element,n, catagory){
 function updateImage(){
     let imageUpdater = document.getElementById("post-image");
     imageUpdater.src = PII[pageCount].media_url;
+    let linkUpdate = document.getElementById("post-link");
+    linkUpdate.href = PII[pageCount].permalink;
 }
+
+
 function incrementPage(){
     pageCount++;
+    updateImage();
 }
 
 function decrementPage(){
-    pageCount--
+    pageCount--;
+    updateImage();
 }
 
 async function fetchData() {
@@ -389,6 +395,7 @@ async function fetchData() {
     await searchData(); //up there!
     console.log(addressCount, phoneCount, emailCount, birthdayCount, schoolCount, PIICount, interestCount)
     applyChanges();
+    updateImage();
   } catch (error) {
     console.error(error);
   }
