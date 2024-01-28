@@ -401,7 +401,7 @@
 #PII{
     position: absolute;
     
-    margin-top: 800px;
+    margin-top: 1150px;
     margin-left: 80px;
     top: 95%;
 
@@ -449,4 +449,5 @@
 }
 .small-mission{
     color: #7077A1;
+    font-weight:300;
 }
