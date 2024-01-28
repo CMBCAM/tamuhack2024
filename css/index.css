@@ -336,6 +336,7 @@
     justify-content: space-evenly;
     margin-top: 40px;
 }
+
 .img-btns > button{
     border: 2px solid #ec9751;
     background-color: transparent;
@@ -345,9 +346,10 @@
 }
 
 .social-icon{
-    margin-top: 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    
+    margin-top: 40px;
 }
 
 .social-icon > img{
